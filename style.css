@@ -1,0 +1,19 @@
+div{
+    background-color: red;
+}
+#header{
+    font-size: 2rem;
+}
+.sub{
+    font-size: 1.5rem;
+    color: blue;
+}
+
+#text{
+    font-size: 1.5rem;
+    color: pink;
+}
+
+#text p{
+    background-color:  blueviolet;
+}
