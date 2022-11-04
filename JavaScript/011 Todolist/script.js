@@ -8,6 +8,7 @@ function getHTMLTasks() {
         html += `<li>${element}</li>`;
     });
     return html;
+
 }
 function printTaskList() {
     document.getElementById("tasklist").innerHTML = getHTMLTasks();
