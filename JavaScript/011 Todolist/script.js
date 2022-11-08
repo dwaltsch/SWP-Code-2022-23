@@ -1,11 +1,17 @@
-const tasks = ["tun", "nichtstun" , "machen"];
+const tasks = [];
+console.log(tasks);
 
 printTaskList();
 
 function getHTMLTasks() {
     let html = "";
     tasks.forEach((element) => {
-        html += `<li>${element}</li>`;
+        if(element.isDone) {
+            html += "<li><input type='checkbox' checked/>" + element.name + " " + element.responsible + "</li>";
+        }
+        else{
+            html += "<li><input type='checkbox'/>" + element.name + " " + element.responsible + "</li>";
+        }
     });
     return html;
 
@@ -15,7 +21,13 @@ function printTaskList() {
 }
 
 document.getElementById("addTask").addEventListener("click", function() {
-    let newTask = document.getElementById("txtNewTask").value;
-    tasks.push(newTask);
-    printTaskList();
+    addTask();
 });
+
+function addTask() {
+    let taskName = document.getElementById("txtNewTask").value;
+    let Responsible = document.getElementById("txtResponsible").value;
+    let task = {name: taskName, isDone: false, responsible : Responsible};
+    tasks.push(task);
+    printTaskList();
+}
