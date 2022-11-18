@@ -11,7 +11,7 @@ for (let i = 9; i <= 99; i++) {
     console.log(i);
 }
 //10 0
-for (let i = 10; i >= 0 ; i--) {
+for (let i = 10; i >= 0; i--) {
     console.log(i)
 }
 

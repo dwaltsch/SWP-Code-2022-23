@@ -7,26 +7,24 @@ let row = "";
 let emptyspace = "|    ";
 let weekday = 0;
 for (let i = 1; i <= anzahltage; i++) {
-    if(i >= starttag){
+    if (i >= starttag) {
         weekday++;
-        if(i < 10){
+        if (i < 10) {
             row = row + "|  " + i + " ";
-        }
-        else {
+        } else {
             row = row + "| " + i + " ";
         }
-        if (i % 7 == 0){
+        if (i % 7 == 0) {
             row = row + "| \n"
             weekday = 0;
         }
 
-    }
-    else{
+    } else {
         row = row + "|    "
     }
 }
-if(weekday != 7){
-    for (let i = 0; i < 7-weekday; i++) {
+if (weekday != 7) {
+    for (let i = 0; i < 7 - weekday; i++) {
         row = row + emptyspace;
     }
 }

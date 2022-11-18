@@ -4,7 +4,7 @@
 // X X X X
 // O O O O
 
-for (let i = 0; i < 4 ; i++) {
+for (let i = 0; i < 4; i++) {
     let row = "";
     for (let j = 0; j < 4; j++) {
         if (i % 2 == 0) {
