@@ -3,14 +3,24 @@ console.log(tasks);
 
 printTaskList();
 
+function markTask(element) {
+    let index = element.getAttribute("data-index");
+    let isChecked = element.checked;
+    tasks[index].isDone = isChecked;
+    printTaskList();
+}
+
 function getHTMLTasks() {
     let html = "";
+    let index = 0;
     tasks.forEach((element) => {
         if(element.isDone) {
-            html += "<li><input type='checkbox' checked/>" + element.name + " " + element.responsible + "</li>";
+            html += "<li><input onClick='markTask(this)' type='checkbox' data-index='" + index + "' checked/>" + element.name + " " + element.responsible + " " + index + "</li>";
+            index++;
         }
         else{
-            html += "<li><input type='checkbox'/>" + element.name + " " + element.responsible + "</li>";
+            html += "<li><input onClick='markTask(this)' type='checkbox' data-index='" + index + "' />" + element.name + " " + element.responsible + " " + index + "</li>";
+            index++;
         }
     });
     return html;
