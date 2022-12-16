@@ -31,15 +31,34 @@ const fillTable =(data, Liga)=>{
     document.getElementById("output").innerHTML =html;
 }
 const generatematches =(data)=>{
+    // i bin selber ned stolz uf den code aber es funktioniert
     let html ="<table><th> Gruppe A</th>";
+    let htmb ="<table><th> Gruppe B</th>";
+    let htmc ="<table><th> Gruppe C</th>";
+    let htmd ="<table><th> Gruppe D</th>";
+    let htme ="<table><th> Gruppe E</th>";
+    let htmf ="<table><th> Gruppe F</th>";
     data.forEach(element =>{
         if(element.group.groupName == "Gruppe A"){
-            console.log(element.team1)
-            console.log(element.team2)
-            html += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td></tr>"+ element.matchResults.teamName +"</td></tr>"
+            html += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td><td>"+ element.matchResults[0].pointsTeam1 + ":" + element.matchResults[0].pointsTeam2 +"</td></tr>"
+        }
+        if(element.group.groupName == "Gruppe B"){
+            htmb += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td><td>"+ element.matchResults[0].pointsTeam1 + ":" + element.matchResults[0].pointsTeam2 +"</td></tr>"
+        }
+        if(element.group.groupName == "Gruppe C"){
+            htmc += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td><td>"+ element.matchResults[0].pointsTeam1 + ":" + element.matchResults[0].pointsTeam2 +"</td></tr>"
+        }
+        if(element.group.groupName == "Gruppe D"){
+htmd += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td><td>"+ element.matchResults[0].pointsTeam1 + ":" + element.matchResults[0].pointsTeam2 +"</td></tr>"
+        }
+        if(element.group.groupName == "Gruppe E"){
+            htme += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td><td>"+ element.matchResults[0].pointsTeam1 + ":" + element.matchResults[0].pointsTeam2 +"</td></tr>"
+        }
+        if(element.group.groupName == "Gruppe F"){
+            htmf += "<tr> <td>" + element.team1.teamName + "</td> <td>" + element.team2.teamName +"</td><td>"+ element.matchResults[0].pointsTeam1 + ":" + element.matchResults[0].pointsTeam2 +"</td></tr>"
         }
     })
     html += "</table>"
-    document.getElementById("matches").innerHTML =html;
+    document.getElementById("matches").innerHTML = (html + htmb + htmc + htmd + htme + htmf);
 }
 loadData();
