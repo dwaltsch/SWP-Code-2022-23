@@ -1,1 +1,0 @@
-let element = document.getElementById("content").innerHTML = "test";
