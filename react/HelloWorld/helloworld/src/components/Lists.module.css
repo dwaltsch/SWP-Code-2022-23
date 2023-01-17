@@ -1,0 +1,10 @@
+.main{
+    background-color: teal;
+    border-style: none;
+    margin: 5px;
+    width: 150px;
+    text-align: left;
+}
+.main:hover{
+    background-color: lightblue;
+}
