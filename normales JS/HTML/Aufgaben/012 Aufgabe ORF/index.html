@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+            background-color: lightgray;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .content {
+            background-color: lightgray;
+            margin-right: auto;
+            margin-left: 100px;
+            max-width: 870px;
+        }
+
+        .menuheader {
+            height: 50px;
+            background-color: darkred;
+            color: white;
+            font-family: Arial;
+        }
+
+        li {
+            display: inline-block;
+            margin: 5px;
+            margin-top: 15px;
+        }
+
+        .ueberblick {
+            margin-left: 30px
+        }
+
+        .vorarlberg {
+            color: white;
+            height: 60px;
+            font-family: Arial;
+            font-size: large;
+            background-color: red;
+        }
+
+        .vorarlberg a {
+            position: relative;
+            left: 20px;
+        }
+
+        .vorarlberg img {
+            position: relative;
+            top: 15px;
+            left: 20px;
+        }
+
+        .smallred {
+            background-color: red;
+            height: 5px;
+            background-color: orangered;
+        }
+
+        .vorarlberglist {
+            font-family: Arial;
+            height: 35px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: darkred;
+            color: white;
+        }
+
+        .headlineblock {
+            position: relative;
+            bottom: 20px;
+            background-color: white;
+            width: 450px;
+        }
+
+        .headlineblock h1 {
+            font-family: Arial;
+            font-size: 30px;
+            color: black;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .headlineblock h3 {
+            font-family: Arial;
+            font-size: 20px;
+            color: darkred;
+            margin-left: 20px;
+        }
+
+        .headlineblock h2 {
+            font-family: Arial;
+            font-size: 20px;
+            color: black;
+            margin-left: 12px;
+        }
+
+        .artikel {
+            background-color: white;
+        }
+
+        .textbloeck {
+            width: 550px;
+            margin-left: 200px;
+            margin-right: 2000px;
+            justify-content: center;
+        }
+
+        .contentblock {
+            margin-left: 50px;
+            width: 350px;
+        }
+
+        .datetime {
+            font-family: Arial;
+            font-size: 12px;
+            color: lightgray;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="menuheader">
+        <div class="list">
+            <ul>
+                <li>Fernsehen</li>
+                <li>TVthek</li>
+                <li>Radiothek</li>
+                <li>Debatte</li>
+                <li>Österreich</li>
+                <li>Wetter</li>
+                <li>Sport</li>
+                <li>News</li>
+                <li class="ueberblick">ORF.at im Überblick</li>
+            </ul>
+        </div>
+    </div>
+    <div class="vorarlberg">
+        <div class="imgg">
+            <a>vorarlberg</a>
+            <img alt="zur ORF.at-Startseite"
+                 class="orfon-target-logo" height="39"
+                 src="https://oekastatic.orf.at/mojo/1_4_1/storyserver//oeka/common/images/target.news.red.svg"
+                 title="ORF.at" width="101">
+        </div>
+    </div>
+    <div class="smallred">
+    </div>
+    <div class="vorarlberglist">
+        <ul>
+            <li>Vorarlberg News</li>
+            <li>Radio Vorarlberg</li>
+            <li>Vorarlberg heute</li>
+            <li>ORF Vorarlberg</li>
+            <li>Ganz Österreich</li>
+        </ul>
+    </div>
+    <div class="artikel">
+        <div class="bild">
+            <img alt="Pensionisten"
+                 srcset="https://oekastatic.orf.at/mims/2022/41/73/crops/w=875,q=90/1523794_opener_555073_menschen_strassenszene_20120914_0095_doh.jpg?s=14afb3ca999657e9d563c6689d0616a72ae8c917"
+                 width="870px">
+        </div>
+        <div class="textbloeck">
+            <div class="headlineblock">
+                <div class="topic">
+                    <h3>Politischer Unsinn</h3>
+                </div>
+                <div class="headline">
+                    <h1>Wien: Pensionisten wollen wieder in die Stadt</h1>
+                </div>
+                <div class="subheadline">
+                    <h2>„Wir wollen wieder in die Stadt“, fordern Pensionisten in Wien. Kleine Gemeinden sind zu teuer
+                        für den durchschnittlichen Pensionisten. Deshalb ziehen immer mehr alte Menschen wieder in
+                        Studentenwohnheime in Wien</h2>
+                </div>
+            </div>
+            <div class="datetime">
+                <p>14.12.2020 12:00</p>
+            </div>
+            <div class="contentblock">
+                <p> WIEN – Rudolf Rumpler (81) starrt apathisch dem Rettungswagen nach, der sein junges Opfer
+                    abtransportiert. Die Katastrophe nahm ihren Lauf, als sich der rücksichtslose Pensionist selbst
+                    falsch am Gehsteig abstellte. „Ich… ich hab mich da einfach kurz im Schatten ausgerastet“,
+                    bagatellisiert Rumpler seine irre Tat.
+                    Der auf einem E-Scooter herbei rasende Döblinger Sportstudent Julius August jun. (23) konnte und
+                    wollte nicht rechtzeitig bremsen. Noch im Schock verständigte er am Boden liegend sofort seinen
+                    Vater, mehrere Anwälte der Familie leisteten erste Hilfe mit einer einstweiligen Verfügung gegen den
+                    offenbar psychopathischen Pensionisten. </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

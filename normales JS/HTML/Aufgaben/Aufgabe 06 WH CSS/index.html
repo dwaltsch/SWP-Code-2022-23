@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WH 05</title>
+    <style>
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gruengros {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-color: black;
+            border-style: solid;
+        }
+
+        .gruenklei {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-color: black;
+            border-style: solid;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .gruengross {
+            height: 200px;
+            width: 200px;
+            border-color: green;
+            border-style: solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gruenklein {
+            height: 100px;
+            width: 100px;
+            border-color: green;
+            border-style: solid;
+        }
+
+        .bluebox {
+            position: fixed;
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .blackbox {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            top: 0px;
+            left: 0px;
+        }
+
+        .blackbox2 {
+            position: absolute;
+            bottom: 0px;
+            left: -10px;
+            height: 20px;
+            width: 20px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="flexbox">
+    <div class="gruengros">
+        <div class="gruenklei"></div>
+    </div>
+    <div class="gruengross">
+        <div class="gruenklein"></div>
+    </div>
+    <div class="gruengross">
+        <div class="gruenklein"></div>
+    </div>
+</div>
+
+<div class="bluebox">
+    <div class="blackbox">
+    </div>
+    <div class="blackbox2"></div>
+</div>
+</body>
+</html>

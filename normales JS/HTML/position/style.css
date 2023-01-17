@@ -1,0 +1,12 @@
+div {
+    border-style: solid;
+    border-color: aquamarine;
+    height: 100px;
+}
+
+.div1 {
+    background-color: red;
+    position: sticky;
+    width: 100%;
+    top: 50px;
+}

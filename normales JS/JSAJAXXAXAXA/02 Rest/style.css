@@ -1,0 +1,34 @@
+.header {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    border-style: none;
+    background-color: aquamarine;
+    color: white;
+}
+
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.content {
+    padding: 25px;
+}
+
+.content li {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 1px;
+    color: darkslategrey;
+}
+
+.content li:hover {
+    background-color: floralwhite;
+    cursor: pointer;
+}

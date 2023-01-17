@@ -1,8 +1,9 @@
 // rcc
 import React from 'react';
+import styles from './Button.module.css';
 
 export default function SuperButton(props) {
     return (
-        <div>{props.name}</div>
+        <div className={styles.main}> {props.name}</div>
     )
 };
