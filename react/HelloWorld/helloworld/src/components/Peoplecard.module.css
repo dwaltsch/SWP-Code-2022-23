@@ -1,0 +1,16 @@
+.main{
+    border-style: solid;
+    padding: 3px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: dimgrey;
+    text-align: left;
+}
+.main h4{
+    font-size: medium;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.main p{
+    font-size: small;
+}
