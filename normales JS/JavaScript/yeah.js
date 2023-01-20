@@ -7,9 +7,9 @@ console.log(a);
 
 const caseOrTrick = readline();
 const n = parseInt(readline());
-var buchstaben = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var buchstaben = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var output = "";
-if(n > 26) {
+if (n > 26) {
     if (caseOrTrick.toLowerCase() == "lower") {
         for (let i = 0; i < n; i++) {
             if (i + 1 == n) {
@@ -24,11 +24,10 @@ if(n > 26) {
         for (let i = 0; i < n; i++) {
             if (i + 1 == n) {
                 output += buchstaben[i].toUpperCase();
-            }
-            else {
+            } else {
                 output = output + buchstaben[i].toUpperCase() + " ";
             }
-            }
+        }
         console.log(output);
     }
 } else {

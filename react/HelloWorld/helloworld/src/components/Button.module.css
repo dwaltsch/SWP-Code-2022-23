@@ -1,17 +1,20 @@
-.main{
+.main {
     border-style: solid;
     padding: 10px;
     margin-bottom: 15px;
 }
-.main:hover{
+
+.main:hover {
     background-color: lightblue;
 }
-.isOn{
+
+.isOn {
     border-style: solid;
     padding: 10px;
     background-color: aqua;
 }
-.isOff{
+
+.isOff {
     border-style: solid;
     padding: 10px;
     background-color: lightcoral;

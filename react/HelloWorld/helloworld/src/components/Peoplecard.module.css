@@ -1,4 +1,4 @@
-.main{
+.main {
     border-style: solid;
     padding: 3px;
     margin-bottom: 5px;
@@ -6,11 +6,13 @@
     color: dimgrey;
     text-align: left;
 }
-.main h4{
+
+.main h4 {
     font-size: medium;
     padding: 0px;
     margin-bottom: 0px;
 }
-.main p{
+
+.main p {
     font-size: small;
 }
